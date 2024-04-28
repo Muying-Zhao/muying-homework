@@ -1,0 +1,19 @@
+<privacy-popup isMosk="{{false}}"></privacy-popup>
+<view class="wrapper">
+  <view class="userinfo">
+    <view class="avatar">
+      <!-- wx官方文档提供的一种开放能力,但目前不让使用 -->
+      <!-- <open-data type="userAvatarUrl"></open-data> -->
+      <image src="{{userInfo.avatar}}" mode="widthFix" class="avatar_pic"/>
+    </view>
+    <view class="nickname">
+      <!-- <open-data type="userNickName"></open-data> -->
+      {{userInfo.nickname}}
+    </view>
+  </view>
+  <view class="btn">
+    <button class="btn_login" bindtap="handleLogin">授权登录</button>
+    <!-- type="default"默认按钮类型 -->
+    <button class="btn_toback_home" type="default" bindtap="handleToBack">返回首页</button>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+// wxs与JavaScript相似，ES6语法大多不能使用，采用ES5，且wx.都不能使用
+// 自定义组件封装就是高内聚低耦合的意思
+
+var touchStartX
+
+function handleTouchstart(event) {
+  // console.log(event)
+  // 数据绑定，记录触摸开始的X轴的位置
+  touchStartX = event.changedTouches[0].clientX
+}
+
+function handleTouchend(event, ownerInstance) {
+  // console.log(event)
+  // 把结束时的X轴位置 - 触摸开始时的位置
+  // 判断正负来确定左滑还是右滑
+  // 做数据绑定，改变currentTabIndex的值
+  var touchEndX = event.changedTouches[0].clientX
+  var distance = touchEndX - touchStartX
+  // -1：后退(向右) 0：不动 1：前进(向左)
+  var direction = 0
+  // 向左滑动，前进
+  if (distance < 0 && distance < -70) {
+    direction = 1
+  }
+  // 向右滑动，后退
+  if (distance > 0 && distance > 70) {
+    direction = -1
+  }
+  if (direction !== 0) {
+    // 1、触发事件 2、直接调用引用该WXS的页面或者组件的方法
+    ownerInstance.callMethod('handleTouchMove', {direction:direction})
+  }
+}
+// 将函数暴露出去，外部才能进行调用
+module.exports = {
+  handleTouchstart: handleTouchstart,
+  handleTouchend: handleTouchend
+}

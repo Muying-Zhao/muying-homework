@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-consumer":"./components/consumer/consumer",
+    "i-publisher":"./components/publisher/publisher"
+  }
+}

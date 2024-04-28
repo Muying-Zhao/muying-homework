@@ -1,0 +1,29 @@
+<!-- 导入骨架屏模版 -->
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+
+<view class="layout">
+  <i-tabs tabs="{{tabs}}" bind:change="handleClickTabs">
+    <!-- 插槽插入的是tabs组件里的内容 -->
+    <view class="category" slot="slot_tabs">
+      <!-- 原生swiper组件 -->
+      <!-- display-multiple-items显示几个item next-margin下一个item显示多少-->
+      <!--替换骨架屏 <image style="width: 80%; height: 150rpx;"/> -->
+      <swiper class="category_swiper" display-multiple-items="{{2}}" next-margin="60rpx">
+        <!--swiper-item的class不生效  -->
+        <swiper-item wx:for="{{categoryList}}" wx:key="index">
+          <view class="category_swiper_item" bindtap="handleClickSwiper" data-id="{{item.id}}">
+            <text class="category_swiper_item_txt">{{item.name}}</text>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view slot="slot_panel">
+      <view wx:for="{{serviceList}}" wx:key="index" class="slot_panel_preview">
+        <i-service-preview service="{{item}}" bindtap="handleSelectedService"
+        data-service="{{item}}"></i-service-preview>
+      </view>
+      <i-show-status show="{{serviceList.length<1}}" content="暂时还没有任何服务" top="220"></i-show-status>
+    </view>
+  </i-tabs>
+</view>

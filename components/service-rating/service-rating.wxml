@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="row">
+    <view class="author">
+      <i-avatar src="{{rating.author.avatar}}" text="{{rating.author.nickname}}" size="60" shape="circle"></i-avatar>
+    </view>
+    <view class="create_time">
+      {{rating.create_time}}
+    </view>
+  </view>
+  <view class="score">
+    评分：<i-rating count="{{5}}" selected="{{rating.score}}" size="36"></i-rating>
+  </view>
+  <view class="conotent">{{rating.content}}</view>
+  <view wx:if="{{rating.illustration.length}}" class="illustration">
+    <!-- 在定义的时候提供一种站位元素，并不会真正的渲染在页面上 -->
+    <block wx:for="{{rating.illustration}}" wx:key="index">
+      <image src="{{item}}" mode="" class="illustration_pic " bindtap="handlePreview" data-index="{{index}}" />
+    </block>
+  </view>
+</view>

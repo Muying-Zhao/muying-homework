@@ -1,0 +1,41 @@
+<view class="content" bind:tap="handleSelect">
+  <view class="content_left">
+    <view class="content_left_type-tag">
+      {{service.type===serviceTypeEnum.PRPVIDE?'在提供':'正在找'}}
+    </view>
+    <image src="{{service.cover_image.path}}" mode="" class="content_left_img" />
+  </view>
+  <view class="content_right">
+    <view class="content_row">
+      <view class="content_title ">
+        {{service.title}}
+      </view>
+      <view class="content_category ">
+        <i-icon name="biaoqian" color="#f27013"></i-icon>
+        <view class="content_category_text">{{service.category.name}}</view>
+      </view>
+    </view>
+    <view class="content_row">
+      <view class="content_publisher">
+        <view class="content_publisher_avatar">
+          <image src="{{service.publisher.avatar}}" mode="" class="content_publisher_avatar_pic" />
+        </view>
+        <view class="content_publisher_nickname">{{service.publisher.nickname}}</view>
+      </view>
+      <view wx:if="{{service.type===serviceTypeEnum.PRPVIDE}}" class="content_score">☆ {{service.score}}</view>
+    </view>
+    <view class="content_row">
+      <view class="content_time">
+        {{service.create_time}}
+      </view>
+    </view>
+    <view class="content_row content_row4">
+      <view class="content_price">
+        {{service.price}}
+      </view>
+      <view wx:if="{{service.type===serviceTypeEnum.PRPVIDE}}"  class="content_sales">
+        已售 {{service.sales_volume}}
+      </view>
+    </view>
+  </view>
+</view>

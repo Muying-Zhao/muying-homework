@@ -1,0 +1,239 @@
+<!--
+此文件为开发者工具生成，生成时间: 2023/9/27下午11:25:06
+使用方法：
+在 C:\Users\mtudou\Desktop\homemark\pages\home\home.wxml 引入模板
+
+```
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 C:\Users\mtudou\Desktop\homemark\pages\home\home.wxss 中引入样式
+```
+@import "./home.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="layout">
+      <view is="components/tabs/tabs">
+        <view class="tabs--container">
+          <view class="tabs--tabs">
+            <view class="tabs--tabs_item" data-index="0">
+              <view class="tabs--tabs_item_label tabs--tabs_item_label-active sk-transparent sk-text-14-2857-242 sk-text">
+                全部服务
+              </view>
+              <view class="tabs--tabs_item_divider"></view>
+            </view>
+            <view class="tabs--tabs_item" data-index="1">
+              <view class="tabs--tabs_item_label sk-transparent sk-text-14-2857-601 sk-text">
+                在提供
+              </view>
+            </view>
+            <view class="tabs--tabs_item" data-index="2">
+              <view class="tabs--tabs_item_label sk-transparent sk-text-14-2857-220 sk-text">
+                正在找
+              </view>
+            </view>
+          </view>
+          <view class="category">
+            <image style="width: 80%; height: 78px;" class="sk-image"></image>
+          </view>
+          <view class="tabs--tab_panel">
+            <view>
+              <view>
+                <view is="components/service-preview/service-preview">
+                  <view class="preview--content">
+                    <view class="preview--content_left">
+                      <view class="preview--content_left_type-tag sk-transparent sk-text-14-2857-742 sk-text">
+                        在提供
+                      </view>
+                      <image class="preview--content_left_img sk-image" mode="true"></image>
+                    </view>
+                    <view class="preview--content_right">
+                      <view class="preview--content_row">
+                        <view class="preview--content_title sk-transparent sk-text-14-2857-128 sk-text">
+                          专业汽修服务
+                        </view>
+                        <view class="preview--content_category">
+                          <view is="components/icon/icon">
+                            <view class="icon--iconfont icon--icon-biaoqian sk-pseudo sk-pseudo-circle" style="font-size: 17px; color:#f27013;"></view>
+                          </view>
+                          <view class="preview--content_category_text sk-transparent sk-text-14-2857-981 sk-text">汽修</view>
+                        </view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_publisher">
+                          <view class="preview--content_publisher_avatar">
+                            <image class="preview--content_publisher_avatar_pic sk-image" mode="true"></image>
+                          </view>
+                          <view class="preview--content_publisher_nickname sk-transparent sk-text-14-2857-332 sk-text">ONLY 0</view>
+                        </view>
+                        <view class="preview--content_score sk-transparent sk-text-14-2857-798 sk-text">☆ 0</view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_time sk-transparent sk-text-14-2857-429 sk-text">
+                          2023-09-03 12:44:44
+                        </view>
+                      </view>
+                      <view class="preview--content_row preview--content_row4">
+                        <view class="preview--content_price sk-transparent sk-text-14-2857-273 sk-text">
+                          200.00
+                        </view>
+                        <view class="preview--content_sales sk-transparent sk-text-14-2857-581 sk-text">
+                          已售 0
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view>
+                <view is="components/service-preview/service-preview">
+                  <view class="preview--content">
+                    <view class="preview--content_left">
+                      <view class="preview--content_left_type-tag sk-transparent sk-text-14-2857-58 sk-text">
+                        在提供
+                      </view>
+                      <image class="preview--content_left_img sk-image" mode="true"></image>
+                    </view>
+                    <view class="preview--content_right">
+                      <view class="preview--content_row">
+                        <view class="preview--content_title sk-transparent sk-text-14-2857-783 sk-text">
+                          家用电脑维修
+                        </view>
+                        <view class="preview--content_category">
+                          <view is="components/icon/icon">
+                            <view class="icon--iconfont icon--icon-biaoqian sk-pseudo sk-pseudo-circle" style="font-size: 17px; color:#f27013;"></view>
+                          </view>
+                          <view class="preview--content_category_text sk-transparent sk-text-14-2857-685 sk-text">家电维修</view>
+                        </view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_publisher">
+                          <view class="preview--content_publisher_avatar">
+                            <image class="preview--content_publisher_avatar_pic sk-image" mode="true"></image>
+                          </view>
+                          <view class="preview--content_publisher_nickname sk-transparent sk-text-14-2857-115 sk-text">爱吃鱼的羊</view>
+                        </view>
+                        <view class="preview--content_score sk-transparent sk-text-14-2857-957 sk-text">☆ 0</view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_time sk-transparent sk-text-14-2857-534 sk-text">
+                          2023-07-27 09:52:48
+                        </view>
+                      </view>
+                      <view class="preview--content_row preview--content_row4">
+                        <view class="preview--content_price sk-transparent sk-text-14-2857-197 sk-text">
+                          100.00
+                        </view>
+                        <view class="preview--content_sales sk-transparent sk-text-14-2857-186 sk-text">
+                          已售 2
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view>
+                <view is="components/service-preview/service-preview">
+                  <view class="preview--content">
+                    <view class="preview--content_left">
+                      <view class="preview--content_left_type-tag sk-transparent sk-text-14-2857-415 sk-text">
+                        正在找
+                      </view>
+                      <image class="preview--content_left_img sk-image" mode="true"></image>
+                    </view>
+                    <view class="preview--content_right">
+                      <view class="preview--content_row">
+                        <view class="preview--content_title sk-transparent sk-text-14-2857-533 sk-text">
+                          客村附近急寻电工
+                        </view>
+                        <view class="preview--content_category">
+                          <view is="components/icon/icon">
+                            <view class="icon--iconfont icon--icon-biaoqian sk-pseudo sk-pseudo-circle" style="font-size: 17px; color:#f27013;"></view>
+                          </view>
+                          <view class="preview--content_category_text sk-transparent sk-text-14-2857-215 sk-text">装修</view>
+                        </view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_publisher">
+                          <view class="preview--content_publisher_avatar">
+                            <image class="preview--content_publisher_avatar_pic sk-image" mode="true"></image>
+                          </view>
+                          <view class="preview--content_publisher_nickname sk-transparent sk-text-14-2857-360 sk-text">沁塵</view>
+                        </view>
+                        <view class="preview--content_score sk-transparent sk-text-14-2857-427 sk-text">☆ 0</view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_time sk-transparent sk-text-14-2857-819 sk-text">
+                          2023-05-23 17:49:40
+                        </view>
+                      </view>
+                      <view class="preview--content_row preview--content_row4">
+                        <view class="preview--content_price sk-transparent sk-text-14-2857-324 sk-text">
+                          3000.00
+                        </view>
+                        <view class="preview--content_sales sk-transparent sk-text-14-2857-863 sk-text">
+                          已售 0
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view>
+                <view is="components/service-preview/service-preview">
+                  <view class="preview--content">
+                    <view class="preview--content_left">
+                      <view class="preview--content_left_type-tag sk-transparent sk-text-14-2857-95 sk-text">
+                        在提供
+                      </view>
+                      <image class="preview--content_left_img sk-image" mode="true"></image>
+                    </view>
+                    <view class="preview--content_right">
+                      <view class="preview--content_row">
+                        <view class="preview--content_title sk-transparent sk-text-14-2857-986 sk-text">
+                          浴室清洁工作
+                        </view>
+                        <view class="preview--content_category">
+                          <view is="components/icon/icon">
+                            <view class="icon--iconfont icon--icon-biaoqian sk-pseudo sk-pseudo-circle" style="font-size: 17px; color:#f27013;"></view>
+                          </view>
+                          <view class="preview--content_category_text sk-transparent sk-text-14-2857-456 sk-text">保洁</view>
+                        </view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_publisher">
+                          <view class="preview--content_publisher_avatar">
+                            <image class="preview--content_publisher_avatar_pic sk-image" mode="true"></image>
+                          </view>
+                          <view class="preview--content_publisher_nickname sk-transparent sk-text-14-2857-519 sk-text">Kingda</view>
+                        </view>
+                        <view class="preview--content_score sk-transparent sk-text-14-2857-588 sk-text">☆ 0</view>
+                      </view>
+                      <view class="preview--content_row">
+                        <view class="preview--content_time sk-transparent sk-text-14-2857-200 sk-text">
+                          2023-05-16 19:13:29
+                        </view>
+                      </view>
+                      <view class="preview--content_row preview--content_row4">
+                        <view class="preview--content_price sk-transparent sk-text-14-2857-322 sk-text">
+                          999.00
+                        </view>
+                        <view class="preview--content_sales sk-transparent sk-text-14-2857-217 sk-text">
+                          已售 0
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>image.300.31×78Background#000000AccessibilityNameRoleimgKeyboard-focusable</view>
+</template>

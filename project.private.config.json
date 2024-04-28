@@ -1,0 +1,56 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "yixuanfuwu",
+  "setting": {
+    "compileHotReLoad": false,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "我的",
+          "pathName": "pages/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "发布",
+          "pathName": "pages/publish/publish",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "订单页面",
+          "pathName": "pages/order/order",
+          "query": "service={\"id\":789,\"type\":1,\"designated_place\":1,\"title\":\"专业汽修服务\",\"description\":\"提供专业的汽修服务，可以提供上门服务，远程服务，价格公道\",\"price\":\"200.00\",\"begin_date\":\"2023-09-03\",\"end_date\":\"2023-12-03\",\"score\":\"0\",\"sales_volume\":0,\"status\":2,\"create_time\":\"2023-09-03 12:44:44\",\"publisher\":{\"id\":3400,\"order_no\":\"2306221439494397\",\"nickname\":\"ONLY 0\",\"avatar\":\"http://qinchenju.com/homemaking/storage/20230910/2e1b4384135e6c7a6d39bd0231214e8d.jpeg\",\"real_name\":null,\"gender\":0,\"tel\":null},\"category\":{\"id\":2,\"name\":\"汽修\"},\"cover_image\":{\"id\":1481,\"path\":\"http://qinchenju.com/homemaking/storage/20230903/66206a7292151124eb7af40479855c5b.jpg\"}}",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "服务详情",
+          "pathName": "pages/service-detail/service-detail",
+          "query": "service_id=11",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "预约成功",
+          "pathName": "pages/order-success/order-success",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

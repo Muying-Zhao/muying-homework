@@ -1,0 +1,95 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/service-detail/service-detail",
+    "pages/message/message",
+    "pages/publish/publish",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/service-edit/service-edit",
+    "pages/conversation/conversation",
+    "pages/order-success/order-success",
+    "pages/my-order/my-order",
+    "pages/publisher-success/publisher-success",
+    "pages/my-service/my-service",
+    "pages/refund-list/refund-list",
+    "pages/refund/refund",
+    "pages/remark/remark",
+    "pages/refund-detail/refund-detail",
+    "pages/order-detail/order-detail",
+    "pages/pay-success/pay-success",
+    "pages/rating/rating"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "慕慕到家",
+    "navigationBarTextStyle": "black",
+    "backgroundColorBottom": "#efefef"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#FBC02D",
+    "color": "#8a8a8a",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "广场",
+        "iconPath": "./images/tab_bar/home.png",
+        "selectedIconPath": "./images/tab_bar/home_selected.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "./images/tab_bar/publish.png",
+        "selectedIconPath": "./images/tab_bar/publish_selected.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "./images/tab_bar/message.png",
+        "selectedIconPath": "./images/tab_bar/message_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/tab_bar/mine.png",
+        "selectedIconPath": "./images/tab_bar/mine_selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "i-icon": "/components/icon/icon",
+    "i-tabs": "/components/tabs/tabs",
+    "i-service-preview": "/components/service-preview/service-preview",
+    "i-show-status": "/components/show-status/show-status",
+    "i-avatar": "/components/avatar/avatar",
+    "i-rating": "/components/rating/rating",
+    "i-service-rating": "/components/service-rating/service-rating",
+    "i-safe-area": "/components/safe-area/safe-area",
+    "i-button": "/components/button/button",
+    "i-image-uploader": "/components/image-uploader/image-uploader",
+    "i-service-form": "/components/service-form/service-form",
+    "i-badge": "/components/badge/badge",
+    "i-grid": "/components/grid/grid",
+    "i-grid-item": "/components/grid-item/grid-item",
+    "i-order-preview": "/components/order-preview/order-preview",
+    "i-order-info": "/components/order-info/order-info",
+    "i-detail-chat": "/components/detail-chat/detail-chat",
+    "i-skeleton": "/components/skeleton/skeleton",
+    "i-rating-item": "/components/rating-item/rating-item",
+    "privacyPopup":"/components/privacyPopup/privacyPopup",
+    "mp-msg": "weui-miniprogram/msg/msg",
+    "mp-form": "weui-miniprogram/form/form",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-toptips": "weui-miniprogram/toptips/toptips",
+    "mp-uploader": "weui-miniprogram/uploader/uploader"
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}

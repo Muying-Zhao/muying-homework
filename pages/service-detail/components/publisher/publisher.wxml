@@ -1,0 +1,6 @@
+<view class="actbar_item">
+  <i-button bgColor="#fff" shape="semicircle" border wx:if="{{service.status!==serviceStatusEnum.CANCELED&&service.status!==serviceStatusEnum.OFF_SHELVES}}" bindtap="handleUpdateStatus" data-action="{{serviceActionEnum.CANCEL}}">取消服务</i-button>
+  <i-button bgColor="#fff" shape="semicircle" border wx:if="{{service.status!==serviceStatusEnum.CANCELED&&service.status!==serviceStatusEnum.OFF_SHELVES}}" bindtap="handleEditService">修改服务</i-button>
+  <i-button shape="semicircle" wx:if="{{service.status===serviceStatusEnum.PUBLISHED }}" bindtap="handleUpdateStatus" data-action="{{serviceActionEnum.PAUSE}}">暂停服务</i-button>
+  <i-button shape="semicircle" wx:if="{{service.status===serviceStatusEnum.UNPUBLISHED }}" bindtap="handleUpdateStatus" data-action="{{serviceActionEnum.PUBLISH}}">发布</i-button>
+</view>

@@ -1,0 +1,54 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  min-height: 100%;
+}
+
+.tabs {
+  display: flex;
+  padding: 30rpx 0;
+  background: #fff;
+  /* 由于被选中文字进行加粗会凸起，所以进行居中 */
+  align-items: center;
+  /* 文字抖动 */
+  /* height: 126rpx;
+  box-sizing: border-box; */
+
+  /* 注意，如果使用吸附效果，它的外层盒子高度不能是100% */
+  position: sticky;
+  top: 0;
+  z-index: 99; 
+}
+
+.tabs_item {
+  flex: 1;
+  display: flex;
+  /* 垂直居中 */
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabs_item_label {
+  color: #888888;
+  /* 不换行 */
+  white-space: nowrap;
+}
+
+.tabs_item_label-active {
+  color: #333;
+  font-weight: bold;
+}
+
+.tabs_item_divider {
+  width: 50rpx;
+  height: 6rpx;
+  margin-top: 10rpx;
+  background: #f3f066;
+}
+
+/* 该样式加入flex: 1;其实已生效，具体未实现是因为父标签的原本高度不够 */
+.tab_panel{
+  flex: 1;
+  margin-top: 30rpx;
+}

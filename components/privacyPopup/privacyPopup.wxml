@@ -1,0 +1,27 @@
+<view class="{{isMosk ? 'blear__deal1':'blear__deal2'}}" wx:if="{{innerShow}}" bindtap="handleDisagree"></view>
+<view wx:if="{{innerShow}}" class="weui-half-screen-dialog" style="position: fixed;  bottom:{{height}}" >
+    <view class="weui-half-screen-dialog__hd">
+          <text class="weui-half-screen-dialog__title">{{title}}</text>
+    </view>
+    <view class="weui-half-screen-dialog__bd">
+        <view class="weui-half-screen-dialog__tips">{{desc1}}</view>
+        <view class="weui-half-screen-dialog__tips weui_ptotovol" style="color:#5d85c9" bindtap="openPrivacyContract">{{urlTitle}}</view>
+        <view class="weui-half-screen-dialog__tips">{{desc2}}</view>
+    </view>
+    <view class="weui-half-screen-dialog__ft">
+      <view class="weui-half-screen-dialog__btn-area">
+        <button id="agree-btn"
+          type="default"
+          open-type="agreePrivacyAuthorization"
+          class="weui-btn weui-btn-agree"
+          bindagreeprivacyauthorization="handleAgree"
+        >同意并继续</button>
+        <button id="disagree-btn"
+          type="default"
+          class="weui-btn weui-btn-refuse"
+          bindtap="handleDisagree"
+        >不同意</button>
+        
+      </view>
+    </view>
+  </view>

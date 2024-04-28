@@ -1,0 +1,5 @@
+<view class="actbar_item">
+  <i-button special icon="telephone" bindtap="handleChat">联系对方</i-button>
+  <!--  i-button-class="test" -->
+  <i-button shape="semicircle" bindtap="handleOrder" wx:if="{{service.type === serviceType.SEEK}}"  >立即预约</i-button>
+</view>

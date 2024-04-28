@@ -1,0 +1,24 @@
+
+<wxs src="/common/wxs/order-status.wxs" module="statusConvert"></wxs>
+
+<view class="container">
+  <view class="tabs">
+    <!-- 设置完绑定事件后，需要绑定进行传参，从而事件能完成监听 data-index -->
+    <view class="tabs_item" wx:for="{{tabs}}" wx:key="index" bindtap="handleClickTabs" data-index="{{index}}">
+      <view class="tabs_item_label {{currentTabsIndex===index?'tabs_item_label-active':''}}">
+        {{item}}
+      </view>
+      <!-- 下划线 -->
+      <view class="tabs_item_divider" wx:if="{{currentTabsIndex===index}}"></view>
+    </view>
+  </view>
+  <slot name="slot_tabs"></slot>
+  <!-- 
+    导入文件后就不需使用tab.js里的函数，而使用wxs里的, bind:touchstart="handleTouchstart"改为
+    bind:touchstart="{{touch.handleTouchstart}}"
+  -->
+  <view class="tab_panel" bind:touchstart="{{touch.handleTouchstart}}" bind:touchend="{{touch.handleTouchend}}">
+    <!-- 插槽slot -->
+    <slot name="slot_panel"></slot>
+  </view>
+</view>

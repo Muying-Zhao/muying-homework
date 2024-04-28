@@ -1,0 +1,8 @@
+<!-- 状态展示，没有内容的时候 -->
+
+<view class="wrapper" style="margin-top: {{top}}rpx;" wx:if="{{show}}">
+  {{content}}
+  <view class="extend">
+    <slot></slot>
+  </view>
+</view>

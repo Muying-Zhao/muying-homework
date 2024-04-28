@@ -1,0 +1,25 @@
+<view class="wrapper">
+  <view class="address" bindtap="handleSelectAddress">
+    <i-icon name="map" color="#333333" size="50"></i-icon>
+    <view wx:if="{{address}}" class="address_info">
+      <view class="address_info_location">
+        {{address.provinceName}}
+        {{address.cityName}}
+        {{address.countyName}}
+      </view>
+      <view class="address_info_contact">
+        {{address.userName}} {{address.telNumber}}
+      </view>
+    </view>
+    <view wx:else class="notice">
+      请选择地址
+    </view>
+  </view>
+  <view class="service_card">
+    <i-service-preview service="{{service}}"></i-service-preview>
+  </view>
+  <view class="actbar">
+    <i-button shape="semicircle" bindtap="handleOrder">立即预约</i-button>
+    <i-safe-area area="bottom"></i-safe-area>
+  </view>
+</view>
